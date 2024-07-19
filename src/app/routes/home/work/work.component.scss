@@ -26,6 +26,8 @@ i {
               align-items: flex-start;
 
               .technologies {
+                justify-content: flex-start;
+
                 .technology {
                   margin-left: 0;
                   margin-right: 1rem;
@@ -106,6 +108,7 @@ i {
               margin-top: 1.2rem;
               @include center();
               justify-content: flex-end;
+              flex-wrap: wrap;
 
               .technology {
                 margin-left: 1rem;
