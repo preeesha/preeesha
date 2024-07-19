@@ -1,0 +1,53 @@
+@import "../../theme";
+@import "../../tools";
+
+.container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: calc(100vw - 1rem);
+  pointer-events: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .panel {
+    @include center();
+    flex-direction: column;
+    pointer-events: all;
+
+    .line {
+      width: 1px;
+      height: 5rem;
+      background: $slate-3;
+      margin-top: 2rem;
+    }
+
+    .socials {
+      @include center();
+      flex-direction: column;
+
+      .social {
+        margin-top: 1.5rem;
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .mail {
+      writing-mode: vertical-rl;
+      letter-spacing: 0.1rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    * {
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

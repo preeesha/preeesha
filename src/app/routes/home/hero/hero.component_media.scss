@@ -1,0 +1,31 @@
+@media (max-width: 900px) {
+  .container {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    section {
+      .socials {
+        display: flex;
+      }
+
+      h1#name {
+        font-size: clamp(1.5rem, 5vw, 2.2rem) !important;
+        margin-bottom: 2rem;
+      }
+
+      #teaser {
+        font-size: clamp(1.2rem, 35vw, 2.2rem) !important;
+      }
+    }
+
+    button {
+      margin-top: 3rem !important;
+      padding: 1rem !important;
+      font-size: 1rem !important;
+      width: 100%;
+    }
+  }
+}

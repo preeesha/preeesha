@@ -1,0 +1,7 @@
+{
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "package.json": "package-lock.json, bun.lockb, README.md, *.js, *.json, .firebaserc, .gitignore, .browserslistrc, .editorconfig",
+        "*.ts": "$(capture).spec.ts"
+    }
+}

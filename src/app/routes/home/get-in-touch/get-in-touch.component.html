@@ -1,0 +1,24 @@
+<div class="container section">
+  <section #section id="get-in-touch">
+    <div class="heading" #mainHeading>
+      <div class="name">
+        <div class="count">03.</div>
+        <div class="name">What's Next?</div>
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="content">
+      <div class="heading" #heading>Get In Touch</div>
+      <div class="description" #content>
+        A warm welcome to everyone whoever wants to interact. Whether or not
+        you're planning for a business, just
+        <span class="handwriting highlight">say a "Hi!"</span>. And if you're
+        planning for buisness, you're most welcome! Just text me & get involved
+        in the process of development.
+      </div>
+      <a [href]="['mailto:', dataService.email]" #cta>
+        <button>Say Hello</button>
+      </a>
+    </div>
+  </section>
+</div>

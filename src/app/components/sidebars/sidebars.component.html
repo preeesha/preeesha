@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="panel">
+    <div class="socials">
+      <div class="social">
+        <a [href]="dataService.social.github" target="_blank">
+          <i class="lab la-github"></i>
+        </a>
+      </div>
+      <div class="social">
+        <a [href]="dataService.social.twitter" target="_blank">
+          <i class="lab la-twitter"></i>
+        </a>
+      </div>
+      <!-- <div class="social">
+        <a [href]="dataService.social.facebook" target="_blank">
+          <i class="lab la-facebook-f"></i>
+        </a>
+      </div>
+      <div class="social">
+        <a [href]="dataService.social.instagram" target="_blank">
+          <i class="lab la-instagram"></i>
+        </a>
+      </div> -->
+      <div class="social">
+        <a [href]="dataService.social.linkedin" target="_blank">
+          <i class="lab la-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+    <div class="line"></div>
+  </div>
+  <div class="panel">
+    <div class="mail">
+      <a [href]="['mailto:', dataService.email]">{{ dataService.email }}</a>
+    </div>
+    <div class="line"></div>
+  </div>
+</div>

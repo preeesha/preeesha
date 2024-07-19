@@ -1,0 +1,53 @@
+@import "../../../theme";
+@import "../../../tools";
+
+.container {
+  min-height: 80vh;
+
+  section {
+    p#name-head {
+      color: $primary;
+      font-size: 1.1rem;
+    }
+
+    h1,
+    h2,
+    p#description {
+      margin: 0;
+      font-family: $font-sans;
+      letter-spacing: -1px;
+    }
+
+    h1#name {
+      font-size: clamp(3.5rem, 5vw, 4.2rem);
+      color: $slate-3;
+    }
+
+    h1#teaser {
+      font-size: clamp(2.5rem, 35vw, 3.5rem);
+      color: $slate-1;
+      margin-top: 0.5rem;
+    }
+
+    p#description {
+      letter-spacing: unset;
+      margin-top: 1.2rem;
+    }
+
+    .socials {
+      @include center();
+      display: none;
+      justify-content: flex-start;
+      margin-top: 2rem;
+
+      i {
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+      }
+    }
+
+    button {
+      margin-top: 5rem;
+    }
+  }
+}

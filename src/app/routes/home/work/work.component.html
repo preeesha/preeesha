@@ -1,0 +1,90 @@
+<div class="container section">
+  <section id="work">
+    <div class="heading" #mainHeading>
+      <div class="name">
+        <div class="count">02.</div>
+        <div class="name">Some Projects I’ve Built</div>
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <div class="content">
+      <div class="projects">
+        <div
+          class="project"
+          *ngFor="let project of dataService.featuredProjects; let i = index"
+          [ngClass]="{ reverse: i % 2 != 0 }"
+          [id]="project.name.replace(' ', '-')"
+        >
+          <div class="image">
+            <!-- <div class="overlay"></div> -->
+            <img [src]="project.imageUrl" alt="" />
+          </div>
+          <div class="about">
+            <div class="featured">Featured Project</div>
+            <div class="name">{{ project.name }}</div>
+            <div class="description">
+              {{ project.description }}
+            </div>
+            <div class="technologies">
+              <div
+                class="technology"
+                *ngFor="let technology of project.technologies"
+              >
+                {{ technology }}
+              </div>
+            </div>
+            <div class="urls">
+              <div class="icon">
+                <a [href]="project.githubUrl" target="_blank">
+                  <i class="lab la-github"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a [href]="project.projectUrl" target="_blank">
+                  <i class="las la-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="heading" #heading>Other Noteworthy Projects</div>
+      <div class="archive" #archive>
+        <a [href]="dataService.social.github" target="_blank">
+          View the Archive
+        </a>
+      </div>
+      <div class="other-projects" #otherProjects>
+        <div class="project" *ngFor="let project of dataService.otherProjects">
+          <div class="actions">
+            <div class="repo-icon">
+              <i class="las la-folder-open"></i>
+            </div>
+            <div class="urls">
+              <div class="icon">
+                <a [href]="project.githubUrl" target="_blank">
+                  <i class="lab la-github"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a [href]="project.projectUrl" target="_blank">
+                  <i class="las la-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="information">
+            <div class="name">{{ project.name }}</div>
+            <div class="description">{{ project.description }}</div>
+          </div>
+
+          <div class="technologies">
+            <div class="technology"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

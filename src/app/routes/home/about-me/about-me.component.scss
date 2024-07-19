@@ -1,0 +1,87 @@
+@import "../../../theme";
+@import "../../../tools";
+
+.container {
+  section {
+    .content {
+      display: grid;
+      grid-template-columns: minmax(22rem, 1fr) minmax(3in, auto);
+      grid-column-gap: 5rem;
+
+      .about {
+        * {
+          font-size: 1.1rem;
+          font-family: $font-sans;
+          line-height: 1.5rem;
+          margin: 0;
+        }
+
+        .technologies {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(5rem, 1fr));
+          grid-row-gap: 0.5rem;
+
+          .technology {
+            @include center();
+            justify-content: flex-start;
+            margin-right: 1rem;
+            
+            .bullet {
+              margin-top: -4px;
+              margin-right: 0.8rem;
+              font-size: 1.5rem;
+              color: $primary;
+              user-select: none;
+            }
+            
+            .name {
+               font-family: $font-mono;
+               line-height: 1.5;
+            }
+          }
+        }
+      }
+
+      .profile {
+        border: 2px solid $primary;
+        border-radius: 1rem;
+        background: rgba($color: $primary, $alpha: 0.1);
+        height: 3.5in;
+        width: 3.5in;
+
+        .image {
+          border-radius: inherit;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          margin-top: -1rem;
+          margin-left: -1rem;
+
+          .overlay {
+            border-radius: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background: rgba($color: $primary, $alpha: 0.3);
+            backdrop-filter: brightness(90%) saturate(0.5)
+              drop-shadow(2px 4px 6px black);
+
+            &:hover {
+              opacity: 0;
+            }
+          }
+
+          img {
+            border-radius: inherit;
+            width: 100%;
+            height: 100%;
+            box-shadow: 2px 4px 50px black;
+          }
+        }
+      }
+    }
+  }
+}

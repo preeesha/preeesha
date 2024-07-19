@@ -1,0 +1,47 @@
+<div class="container section">
+  <section #section id="about-me">
+    <div class="heading" #heading>
+      <div class="name">
+        <div class="count">01.</div>
+        <div class="name">About Me</div>
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <div class="content" #content>
+      <div class="about">
+        <p>
+          Hello! I'm Prisha Gupta, a Software Engineer based in New Delhi,
+          India.
+        </p>
+        <br />
+        <p>
+          I enjoy creating things that users need & love to use. I love people's
+          <span class="handwriting highlight">smiles</span>
+          when they
+          <span class="handwriting highlight">become happy</span>
+          while using my software. My specialization is to create websites &
+          apps with breathtaking performance & provide the best value out of it.
+        </p>
+        <br />
+        <p>Here are a few technologies I've been working with recently:</p>
+        <br />
+        <div class="technologies">
+          <div
+            class="technology"
+            *ngFor="let technology of dataService.technologies"
+          >
+            <div class="bullet">▹</div>
+            <div class="name">{{ technology }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="image">
+          <!-- <div class="overlay"></div> -->
+          <img src="../../../../assets/profile.webp" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

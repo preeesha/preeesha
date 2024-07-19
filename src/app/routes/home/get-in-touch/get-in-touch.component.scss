@@ -1,0 +1,27 @@
+@import "../../../theme";
+@import "../../../tools";
+
+.container {
+  min-height: 70vh;
+
+  section {
+    .content {
+      @include center();
+      flex-direction: column;
+
+      .heading {
+        font-weight: 600;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-family: $font-sans;
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        width: 60%;
+        font-family: $font-sans;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
