@@ -41,7 +41,7 @@ export class DataService {
     },
     {
       name: "Florence",
-      imageUrl: "https://bit.ly/37tmGmR",
+      imageUrl: "/assets/florence.png",
       description: `A next gen Ecom which provides personalized recomandation`,
       githubUrl: "https://github.com/preeesha/florance-frontend",
       projectUrl: "",
